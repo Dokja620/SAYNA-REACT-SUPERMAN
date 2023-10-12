@@ -8,6 +8,11 @@
 # testing
 /coverage
 
+# sass
+/dart-sass
+*.map
+*.bat
+
 # production
 /build
 
