@@ -1,35 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
-/* base styles */
-* {
-  margin: 0;
-  font-family: "Quicksand";
-  color: #333;
-}
+/*SASS Partials*/
 .navbar {
-  padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  justify-content: space-between;
+  padding: 15px 25px;
 }
-.navbar h1 {
-  color: #f1356d;
+.navbar .nav-logo img {
+  width: 25vw;
+  max-width: 100px;
+  min-width: 50px;
 }
-.navbar .links {
-  margin-left: auto;
+.navbar .nav-links ul li {
+  font-family: "H1 S";
+  font-size: 2em;
+  display: inline-block;
+  padding: 0 15px;
+  position: relative;
 }
-.navbar a {
-  margin-left: 16px;
+.navbar .nav-links ul li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom center;
+  transition: all 0.5s ease-in-out;
+}
+.navbar .nav-links ul li:hover::after {
+  transform: scaleX(0.6);
+}
+
+/*reseting default annoying settings*/
+* {
   text-decoration: none;
-  padding: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  scroll-behavior: smooth;
+  color: #fff;
 }
-.navbar a:hover {
-  color: #f1356d;
+
+*:not(header) {
+  animation: fade-in 0.5s ease-in;
 }
-.content {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+
+body {
+  background: #000;
 }
+
+.page {
+  min-height: 100vh;
+  box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
+}
+
+/*partie animation, fade in*/
+@keyframes fade-in {
+  from {
+    transform: translateX(-10%);
+    opacity: 0.2;
+    filter: blur(15px);
+  }
+}
+/*Font importation*/
+@font-face {
+  font-family: "Adv";
+  src: url(/src/assets/fonts/adventure/Adventure.otf);
+}
+@font-face {
+  font-family: "Adv H";
+  src: url(/src/assets/fonts/adventure/Adventure-Hollow.otf);
+}
+@font-face {
+  font-family: "H1 B";
+  src: url(/src/assets/fonts/rajdhani/Rajdhani-Bold.ttf);
+}
+@font-face {
+  font-family: "H1 M";
+  src: url(/src/assets/fonts/rajdhani/Rajdhani-Medium.ttf);
+}
+@font-face {
+  font-family: "H1 S";
+  src: url(/src/assets/fonts/rajdhani/Rajdhani-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Text";
+  src: url(/src/assets/fonts/cantarell/Cantarell-Regular.ttf);
+}
+@font-face {
+  font-family: "Text O";
+  src: url(/src/assets/fonts/cantarell/Cantarell-Oblique.ttf);
+}
+@font-face {
+  font-family: "Text B";
+  src: url(/src/assets/fonts/cantarell/Cantarell-Bold.ttf);
+}
+@font-face {
+  font-family: "Text BO";
+  src: url(/src/assets/fonts/cantarell/Cantarell-BoldOblique.ttf);
+}
+/*default texts styles*/
+h1 {
+  font-family: "H1 B";
+  font-size: 3em;
+  font-style: italic;
+  text-shadow: 0 0 2em black, 0px 0px 10px red, 0 0 3em grey;
+  margin: 0 12%;
+}
+
+#shop-first {
+  background: url(/src/assets/images/img20.png) 50% 50%/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.below {
+  text-align: center;
+}
+.below img {
+  width: 10vw;
+  max-width: 65px;
+  min-width: 15px;
+}
+
+.cart {
+  position: absolute;
+  padding: 35px;
+  top: 0;
+  right: 0;
+}
+.cart img {
+  width: 35px;
+}
+
+#shop-second {
+  position: relative;
+}
+
+/*# sourceMappingURL=App.css.map */

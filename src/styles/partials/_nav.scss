@@ -1,0 +1,35 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    .nav-logo{
+        img{
+            width: 25vw;
+            max-width: 100px;
+            min-width: 50px;
+        }
+    }
+    .nav-links ul li{
+            font-family: 'H1 S';
+            font-size: 2em;
+            display: inline-block;
+            padding: 0 15px;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 4px;
+                bottom: 0;
+                left: 0;
+                background-color: #fff;
+                transform-origin: bottom center;
+                transition: all 0.5s ease-in-out;
+            }
+            &:hover::after{
+                transform: scaleX(.6);
+            }
+    }
+}

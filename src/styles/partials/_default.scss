@@ -1,0 +1,82 @@
+/*reseting default annoying settings*/
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    scroll-behavior: smooth;
+    color: #fff;
+}
+*:not(header) {
+    animation: fade-in .5s ease-in;
+}
+
+body{
+    background: #000;
+}
+
+.page{
+    min-height: 100vh;
+    box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
+}
+
+/*partie animation, fade in*/
+@keyframes fade-in {
+    from{
+        transform: translateX(-10%);
+        opacity: .2;
+        filter: blur(15px);
+    }
+}
+
+/*Font importation*/
+@font-face {
+    font-family: 'Adv';
+    src: url(/src/assets/fonts/adventure/Adventure.otf);
+}
+@font-face {
+    font-family: 'Adv H';
+    src: url(/src/assets/fonts/adventure/Adventure-Hollow.otf);
+}
+
+@font-face {
+    font-family: 'H1 B';
+    src: url(/src/assets/fonts/rajdhani/Rajdhani-Bold.ttf);
+}
+@font-face {
+    font-family: 'H1 M';
+    src: url(/src/assets/fonts/rajdhani/Rajdhani-Medium.ttf);
+}
+@font-face {
+    font-family: 'H1 S';
+    src: url(/src/assets/fonts/rajdhani/Rajdhani-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Text';
+    src: url(/src/assets/fonts/cantarell/Cantarell-Regular.ttf);
+}
+@font-face {
+    font-family: 'Text O';
+    src: url(/src/assets/fonts/cantarell/Cantarell-Oblique.ttf);
+}
+@font-face {
+    font-family: 'Text B';
+    src: url(/src/assets/fonts/cantarell/Cantarell-Bold.ttf);
+}
+@font-face {
+    font-family: 'Text BO';
+    src: url(/src/assets/fonts/cantarell/Cantarell-BoldOblique.ttf);
+}
+
+
+/*default texts styles*/
+h1{
+    font-family: 'H1 B';
+    font-size: 3em;
+    font-style: italic;
+    text-shadow: 0 0 2em black , 0px 0px 10px red, 0 0 3em grey;
+    margin: 0 12%;
+}

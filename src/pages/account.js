@@ -2,7 +2,7 @@ import React from 'react';
 
 const Account = () => {
     return ( 
-        <div style={{ backgroundColor: 'black' }}>
+        <div>
             {/* Your main content goes here */}
             <h1>Account</h1>
             <p>Page not Found</p>
