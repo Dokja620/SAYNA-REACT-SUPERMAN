@@ -112,6 +112,14 @@ h1 {
   margin: 0 12%;
 }
 
+p {
+  font-family: "Text";
+}
+
+#intro {
+  background: url(/src/assets/images/img1.png) 75% 25%/cover no-repeat;
+}
+
 #shop-first {
   background: url(/src/assets/images/img20.png) 50% 50%/cover no-repeat;
   display: flex;
@@ -129,16 +137,316 @@ h1 {
 
 .cart {
   position: absolute;
-  padding: 35px;
+  margin: 35px;
   top: 0;
   right: 0;
+  width: fit-content;
+  cursor: pointer;
+  -webkit-animation: wobble-hor-bottom 2.8s infinite both;
+  animation: wobble-hor-bottom 2.8s infinite both;
 }
 .cart img {
   width: 35px;
 }
+.cart .cartbtn {
+  position: relative;
+}
+.cart .cartbtn .buy {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-family: "Text B";
+  color: red;
+  text-shadow: #FC0 0px 0 5px;
+}
 
+@-webkit-keyframes wobble-hor-bottom {
+  0%, 100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-15px) rotate(-6deg);
+    transform: translateX(-15px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(7px) rotate(6deg);
+    transform: translateX(7px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-7px) rotate(-3.6deg);
+    transform: translateX(-7px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(4px) rotate(2.4deg);
+    transform: translateX(4px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-3px) rotate(-1.2deg);
+    transform: translateX(-3px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%, 100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-15px) rotate(-6deg);
+    transform: translateX(-15px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(7px) rotate(6deg);
+    transform: translateX(7px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-7px) rotate(-3.6deg);
+    transform: translateX(-7px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(4px) rotate(2.4deg);
+    transform: translateX(4px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-3px) rotate(-1.2deg);
+    transform: translateX(-3px) rotate(-1.2deg);
+  }
+}
 #shop-second {
   position: relative;
+  overflow-x: hidden;
+}
+
+button {
+  color: #000;
+}
+
+.shop .product {
+  background-color: red;
+  border: 3px solid red;
+}
+
+#login {
+  background: url(/src/assets/images/img19.png) 75% 25%/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#login .login {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(123deg, rgb(2, 0, 36) 74%, rgba(180, 32, 47, 0.538) 100%);
+  border-radius: 20px;
+  width: 70%;
+}
+#login .login .title {
+  text-align: center;
+}
+#login .login .reg {
+  text-align: center;
+}
+#login .login form {
+  background: linear-gradient(to bottom right, #717b83, rgba(113, 123, 131, 0.1843137255));
+  border: 2px solid rgba(113, 123, 131, 0.5333333333);
+  border-radius: 15px;
+  margin: 20px 15%;
+  padding: 25px 50px;
+}
+#login .login form label {
+  font-family: "H1 B";
+  font-size: 1.5em;
+}
+#login .login form .check {
+  border: 2px solid #8c9196;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+#login .login form .check input {
+  background: none;
+  border: none;
+  padding: 0.2em;
+  width: 90%;
+  margin-left: 5px;
+  color: #1C274C;
+  font-family: "Text";
+  font-size: 1em;
+}
+#login .login form .check input:focus {
+  outline: none;
+}
+#login .login form .check input::placeholder {
+  color: #1C274C;
+  font-family: "Text";
+  font-size: 1em;
+}
+#login .login form .check img {
+  height: 25px;
+}
+#login .login form button {
+  padding: 1em 1.8em;
+  margin: 1em 0;
+  background: linear-gradient(to right, rgba(7, 51, 140, 0.7), rgb(180, 32, 46));
+  color: #fff;
+  font-family: "H1 B";
+  text-transform: uppercase;
+  width: 100%;
+  letter-spacing: 3px;
+  font-size: 1.2em;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+#login .login form button:hover {
+  background: linear-gradient(to right, #07338c, #b4202e);
+}
+
+#dash button {
+  padding: 0.9em 1.8em;
+  margin: 1em 0;
+  background: linear-gradient(to right, rgba(7, 51, 140, 0.7), rgb(180, 32, 46));
+  color: #fff;
+  font-family: "H1 B";
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+#dash button:hover {
+  background: linear-gradient(to right, #07338c, #b4202e);
+}
+
+#secret {
+  display: flex;
+  align-items: center;
+  background: url(/src/assets/images/img37.png) center/cover no-repeat;
+}
+
+.identity {
+  display: flex;
+  gap: 2%;
+  padding: 0 12%;
+  position: relative;
+}
+.identity .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  background: rgba(7, 51, 140, 0.2392156863);
+  backdrop-filter: blur(5px);
+  padding: 5em;
+  border-radius: 2em;
+  border: 2px solid #212E3E;
+  animation: fade-in 0.4s ease-in !important;
+}
+.identity .modal .modal-content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+.identity .modal .modal-content .Close {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: none !important;
+}
+.identity .modal .modal-content .Close img {
+  width: 35px;
+}
+.identity .leftp p {
+  margin: 5px 0;
+  cursor: pointer;
+}
+.identity .leftp p:hover {
+  text-decoration: underline;
+}
+.identity .rightp {
+  transition: all, 5s ease-in-out;
+}
+.identity .rightp label, .identity .rightp span {
+  font-family: "Text";
+  font-size: 1.2em;
+}
+.identity .rightp span {
+  margin-left: 10px;
+}
+.identity .rightp input {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid grey;
+  margin-left: 10px;
+  font-family: "Text B";
+  font-size: 1.2em;
+  color: #b11313;
+}
+.identity .rightp input:focus {
+  outline: none;
+}
+
+section {
+  position: relative;
+  margin-bottom: 100px;
+  margin-left: 10%;
+}
+section::after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: -7%;
+}
+section h3 {
+  font-size: 3em;
+  font-family: "H1 B";
+  position: relative;
+  margin-bottom: 5%;
+}
+section h3::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+section div {
+  margin: 0 5px 0;
+}
+
+footer {
+  margin: 5% 0 15%;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footsoc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footsoc div {
+  margin: 15px 10px;
 }
 
 /*# sourceMappingURL=App.css.map */

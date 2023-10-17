@@ -1,0 +1,203 @@
+#login{
+  background: url(/src/assets/images/img19.png) 75% 25%/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .login{
+    background: rgb(2,0,36);
+    background: linear-gradient(123deg, rgba(2,0,36,1) 74%, rgba(180, 32, 47, 0.538) 100%);
+    border-radius: 20px;
+    width: 70%;
+    .title{
+      text-align: center;
+    }
+    .reg{
+      text-align: center;
+    }
+    form{
+      background: linear-gradient(to bottom right, #717b83, #717b832f);
+      border: 2px solid #717b8388;
+      border-radius: 15px;
+      margin: 20px 15%;
+      padding: 25px 50px;
+      label{
+        font-family: 'H1 B';
+        font-size: 1.5em;
+      }
+      .check{
+        border: 2px solid #8c9196;
+        border-radius: 5px;
+        width: 100%;
+        padding: .5em;
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        input{
+          background: none;
+          border: none;
+          padding: .2em;
+          width: 90%;
+          margin-left: 5px;
+          color: #1C274C;
+          font-family: 'Text';
+          font-size: 1em;
+          &:focus{
+            outline: none;
+          }
+          &::placeholder{
+            color: #1C274C;
+            font-family: 'Text';
+            font-size: 1em;
+          }
+        }
+        img{
+          height: 25px;
+        }
+      }
+      button{
+        padding: 1em 1.8em;
+        margin: 1em 0;
+        background: linear-gradient(to right, rgba(7, 51, 140, 0.7), rgba(180, 32, 46, 1));
+        color: #fff;
+        font-family: 'H1 B';
+        text-transform: uppercase;
+        width: 100%;
+        letter-spacing: 3px;
+        font-size: 1.2em;
+        border-radius: 20px;
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+        &:hover{
+          background: linear-gradient(to right, #07338c, #b4202e);
+        }
+      }
+    }
+  }
+}
+
+
+#dash{
+  button{
+    padding: .9em 1.8em;
+    margin: 1em 0;
+    background: linear-gradient(to right, rgba(7, 51, 140, 0.7), rgba(180, 32, 46, 1));
+    color: #fff;
+    font-family: 'H1 B';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    &:hover{
+      background: linear-gradient(to right, #07338c, #b4202e);
+    }
+  }
+}
+
+#secret{
+  display: flex;
+  align-items: center;
+  background:  url(/src/assets/images/img37.png) center/cover no-repeat;
+}
+
+.identity{
+  display: flex;
+  gap: 2%;
+  padding: 0 12%;
+  position: relative;
+  .modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    background: #07338c3d;
+    backdrop-filter: blur(5px);
+    padding: 5em;
+    border-radius: 2em;
+    border: 2px solid #212E3E;
+    animation: fade-in .4s ease-in!important;
+    .modal-content{
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      .Close{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: none!important;
+        img{
+          width: 35px;
+        }
+      }
+    }
+  }
+  .leftp{
+      p{
+          margin: 5px 0;
+          cursor: pointer;
+          &:hover{
+              text-decoration: underline;
+          }
+      }
+  }
+  .rightp{
+    transition: all ,5s ease-in-out;
+    label, span{
+      font-family: 'Text';
+      font-size: 1.2em;
+    }
+    span{
+      margin-left: 10px;
+    }
+    input{
+      background: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid grey;
+      margin-left: 10px;
+      font-family: 'Text B';
+      font-size: 1.2em;
+      color: #b11313;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+}
+section{
+  position: relative;
+  margin-bottom: 100px;
+  margin-left: 10%;
+  &::after{
+      content: '';
+      height: 100%;
+      width: 1px;
+      background: #fff;
+      position: absolute;
+      bottom: 0;
+      left: -7%;
+  }
+  h3{
+      font-size: 3em;
+      font-family: 'H1 B';
+      position: relative;
+      margin-bottom: 5%;
+      &::after{
+          content: '';
+          height: 1px;
+          width: 100%;
+          background: #fff;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+      }
+  }
+  div{
+    margin: 0 5px 0;
+  }
+}

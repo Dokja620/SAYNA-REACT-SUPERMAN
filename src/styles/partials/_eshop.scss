@@ -14,13 +14,101 @@
 }
 .cart{
     position: absolute;
-    padding: 35px;
+    margin: 35px;
     top: 0;
     right: 0;
+    width: fit-content;
+    cursor: pointer;
+    -webkit-animation: wobble-hor-bottom 2.8s infinite both;
+	        animation: wobble-hor-bottom 2.8s infinite both;
     img{
         width: 35px;
     }
+    .cartbtn{
+      position: relative;
+      .buy{
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          font-family: 'Text B';
+          color: red;
+          text-shadow: #FC0 0px 0 5px;
+      }
+    }
 }
+@-webkit-keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-15px) rotate(-6deg);
+              transform: translateX(-15px) rotate(-6deg);
+    }
+    30% {
+      -webkit-transform: translateX(7px) rotate(6deg);
+              transform: translateX(7px) rotate(6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-7px) rotate(-3.6deg);
+              transform: translateX(-7px) rotate(-3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(4px) rotate(2.4deg);
+              transform: translateX(4px) rotate(2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-3px) rotate(-1.2deg);
+              transform: translateX(-3px) rotate(-1.2deg);
+    }
+  }
+  @keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-15px) rotate(-6deg);
+              transform: translateX(-15px) rotate(-6deg);
+    }
+    30% {
+      -webkit-transform: translateX(7px) rotate(6deg);
+              transform: translateX(7px) rotate(6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-7px) rotate(-3.6deg);
+              transform: translateX(-7px) rotate(-3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(4px) rotate(2.4deg);
+              transform: translateX(4px) rotate(2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-3px) rotate(-1.2deg);
+              transform: translateX(-3px) rotate(-1.2deg);
+    }
+  }
+
+
 #shop-second{
     position: relative;
+    overflow-x: hidden;
+}
+
+button{
+  color: #000;
+}
+
+.shop{
+
+  .product{
+    background-color: red;
+    border: 3px solid red;
+  }
 }
