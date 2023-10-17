@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/SAYNA-REACT-SUPERMAN/static/css/main.b1a4567e.css",
+    "main.js": "/SAYNA-REACT-SUPERMAN/static/js/main.bdac4028.js",
+    "static/media/img20.png": "/SAYNA-REACT-SUPERMAN/static/media/img20.28ad15472d81d737a3eb.png",
+    "static/media/img1.png": "/SAYNA-REACT-SUPERMAN/static/media/img1.8b5ee7de8a51a93d0ce6.png",
+    "static/media/img19.png": "/SAYNA-REACT-SUPERMAN/static/media/img19.fd33cdf0c0eaad494074.png",
+    "static/media/img37.png": "/SAYNA-REACT-SUPERMAN/static/media/img37.bace6f810ec35d64493d.png",
+    "static/media/Rajdhani-Bold.ttf": "/SAYNA-REACT-SUPERMAN/static/media/Rajdhani-Bold.a5a831c1b8c8eb1b83ff.ttf",
+    "static/media/Rajdhani-SemiBold.ttf": "/SAYNA-REACT-SUPERMAN/static/media/Rajdhani-SemiBold.7d928c2670caba5b9dd6.ttf",
+    "static/media/Rajdhani-Medium.ttf": "/SAYNA-REACT-SUPERMAN/static/media/Rajdhani-Medium.bc852e7b1d43f40d7a51.ttf",
+    "static/media/Adventure-Hollow.otf": "/SAYNA-REACT-SUPERMAN/static/media/Adventure-Hollow.48bdb1736e77936bbfe5.otf",
+    "static/media/Cantarell-BoldOblique.ttf": "/SAYNA-REACT-SUPERMAN/static/media/Cantarell-BoldOblique.7a5e09a83b567bcf6017.ttf",
+    "static/media/Cantarell-Oblique.ttf": "/SAYNA-REACT-SUPERMAN/static/media/Cantarell-Oblique.933a9ad9a35310e55ae2.ttf",
+    "static/media/Cantarell-Bold.ttf": "/SAYNA-REACT-SUPERMAN/static/media/Cantarell-Bold.897674542b0020fe150c.ttf",
+    "static/media/Cantarell-Regular.ttf": "/SAYNA-REACT-SUPERMAN/static/media/Cantarell-Regular.ebc1a9917f08b0a15800.ttf",
+    "static/media/Adventure.otf": "/SAYNA-REACT-SUPERMAN/static/media/Adventure.9677cd8d8e48154cdfab.otf",
+    "static/media/shopping-cart-svgrepo-com.svg": "/SAYNA-REACT-SUPERMAN/static/media/shopping-cart-svgrepo-com.552b0e2b89b63da38da87b731f05fa5e.svg",
+    "static/media/eye-svgrepo-com.svg": "/SAYNA-REACT-SUPERMAN/static/media/eye-svgrepo-com.f2fc5c57ca5b8a63307583e7f334c1c8.svg",
+    "index.html": "/SAYNA-REACT-SUPERMAN/index.html",
+    "static/media/user-svgrepo-com.svg": "/SAYNA-REACT-SUPERMAN/static/media/user-svgrepo-com.42499be8aecdb8e6176cf507fadedf70.svg",
+    "static/media/close-svgrepo-com.svg": "/SAYNA-REACT-SUPERMAN/static/media/close-svgrepo-com.200403ae69a577d743f22b148a223c7f.svg",
+    "main.b1a4567e.css.map": "/SAYNA-REACT-SUPERMAN/static/css/main.b1a4567e.css.map",
+    "main.bdac4028.js.map": "/SAYNA-REACT-SUPERMAN/static/js/main.bdac4028.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1a4567e.css",
+    "static/js/main.bdac4028.js"
+  ]
+}
