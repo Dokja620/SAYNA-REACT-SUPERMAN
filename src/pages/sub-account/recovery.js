@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const PasswordRecovery = () => {
   const [email, setEmail] = useState('');
-  const [recoverySent, setRecoverySent] = useState(false);
+  const [recoverySent] = useState(false);
 
   const handleRecoverPassword = () => {
     // Implement the logic to send a recovery email

@@ -1,5 +1,4 @@
 import React from "react";
-import dcLogo from '../assets/logos/logoDC.png';
 import sayna from '../assets/logos/logo_sayna_white.png';
 import cross from '../assets/logos/icon_x.png';
 import bigDc from '../assets/logos/icon_DC.png';

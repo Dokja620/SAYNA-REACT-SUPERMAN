@@ -13,7 +13,7 @@ const Dashboard = () => {
     addressTwo: 'madagascar',
   });
 
-  const [newsletter, setNewsletter] = useState(false);
+  // const [newsletter, setNewsletter] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleLogoutClick = () => {
@@ -36,9 +36,9 @@ const Dashboard = () => {
     // Save the modified user info (you can implement your logic here)
   };
 
-  const handleNewsletterChange = (e) => {
-    setNewsletter(e.target.checked);
-  };
+  // const handleNewsletterChange = (e) => {
+  //   setNewsletter(e.target.checked);
+  // };
 
   return (
     <div id='dash'>
