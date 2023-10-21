@@ -66,10 +66,11 @@ class Filter extends Component {
     const { priceRange, categories, colors, universes } = this.state;
 
     return (
-      <div>
+      <div className='filter'>
         <h1>Filter</h1>
         <div>
-          <p>Price Range: {priceRange} euro</p>
+          <p>Price Range:</p>
+          <p>{priceRange}€</p>
           <input
             type="range"
             min={0}

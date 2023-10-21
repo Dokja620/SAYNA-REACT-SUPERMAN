@@ -52,7 +52,7 @@ const Account = () => {
             </div>
           </div>
           <Link to="/dashboard">
-              <button>valider</button>
+              <button className='log'>valider</button>
         </Link>
           <div className="forgot">
             <p>Connectez vous avec</p>

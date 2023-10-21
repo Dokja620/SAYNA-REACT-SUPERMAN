@@ -160,6 +160,37 @@ p {
   text-shadow: #FC0 0px 0 5px;
 }
 
+.buy {
+  width: fit-content;
+}
+.buy .product-card {
+  border: 2px solid #fff;
+  width: 225px;
+  height: fit-content;
+  text-align: center;
+  color: #fff;
+}
+.buy .product-card img {
+  width: 100%;
+  max-height: 70%;
+  border-bottom: 2px solid #fff;
+}
+.buy .product-card p {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.buy button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px 0;
+  border-radius: 15px;
+  border: 2px solid rgba(57, 68, 188, 0.5882352941);
+  background: #1338be;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
 @-webkit-keyframes wobble-hor-bottom {
   0%, 100% {
     -webkit-transform: translateX(0%);
@@ -219,15 +250,149 @@ p {
 #shop-second {
   position: relative;
   overflow-x: hidden;
+  display: flex;
+  padding: 15% 45px 5%;
+  gap: 5%;
 }
 
 button {
   color: #000;
 }
 
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5%;
+}
 .shop .product {
   background-color: red;
   border: 3px solid red;
+}
+
+.cart-panel {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  padding: 0 10px;
+  min-height: 250px;
+  height: fit-content;
+  background: rgba(7, 51, 140, 0.2392156863);
+  backdrop-filter: blur(5px);
+  border-radius: 2em;
+  border: 2px solid #212E3E;
+  animation: fade-in 0.4s ease-in !important;
+}
+
+.cart-content {
+  position: relative;
+}
+.cart-content .close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  font-family: "H1 B";
+  --b: 3px; /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #ffffff7b;
+  padding: calc(0.05em + var(--s)) calc(0.7em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(from 90deg at var(--b) var(--b), rgba(0, 0, 0, 0) 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2 * var(--_p)) calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid rgba(0, 0, 0, 0);
+  outline-offset: 0.6em;
+  font-size: 16px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  margin: 15px 10px;
+}
+.cart-content .close-button:hover, .cart-content .close-button:focus-visible {
+  --_p: 0px;
+  outline-color: rgba(255, 255, 255, 0.1882352941);
+  outline-offset: 0.05em;
+}
+.cart-content .close-button:active {
+  background: var(--color);
+  color: #fff;
+}
+.cart-content .empty {
+  height: 75px;
+  width: 300px;
+}
+.cart-content .cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.checkout-btn {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px, rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
+  padding: 5px 15px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 15px;
+}
+.checkout-btn:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+.checkout-btn:active {
+  box-shadow: 0 4px 4px 0 rgba(60, 64, 67, 0.3), 0 8px 12px 6px rgba(60, 64, 67, 0.15);
+  outline: none;
+}
+.checkout-btn:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+.checkout-btn:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0, rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+.checkout-btn:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0, rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
+}
+.checkout-btn:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0, rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+.checkout-btn:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 4px 4px 0, rgba(60, 64, 67, 0.15) 0 8px 12px 6px;
+}
+.checkout-btn:disabled {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0, rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
 
 #login {
@@ -239,6 +404,7 @@ button {
 #login .login {
   background: rgb(2, 0, 36);
   background: linear-gradient(123deg, rgb(2, 0, 36) 74%, rgba(180, 32, 47, 0.538) 100%);
+  backdrop-filter: blur(3px);
   border-radius: 20px;
   width: 70%;
 }
@@ -289,7 +455,7 @@ button {
 #login .login form .check img {
   height: 25px;
 }
-#login .login form button {
+#login .login form .log {
   padding: 1em 1.8em;
   margin: 1em 0;
   background: linear-gradient(to right, rgba(7, 51, 140, 0.7), rgb(180, 32, 46));
@@ -299,12 +465,13 @@ button {
   width: 100%;
   letter-spacing: 3px;
   font-size: 1.2em;
+  border: none;
   border-radius: 20px;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
-#login .login form button:hover {
-  background: linear-gradient(to right, #07338c, #b4202e);
+#login .login form .log:hover {
+  background: linear-gradient(to top right, #07338c, #b4202e);
 }
 
 #dash button {
@@ -449,3 +616,4 @@ footer {
   margin: 15px 10px;
 }
 
+/*# sourceMappingURL=App.css.map */

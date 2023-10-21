@@ -8,10 +8,10 @@ import CheckoutPopup from './sub-eshop/CheckoutPopup';
 import Filter from './sub-eshop/filter';
 
 const products = [
-    { id: 1, name: 'Lego superman', price: 5, image: '../assets/produits/001.webp' },
-    { id: 2, name: 'Figurine Superman', price: 15, image: '../assets/produits/002.jpg' },
-    { id: 3, name: 'Pack Superman 6 pièces', price: 30, image: '../assets/produits/003.webp' },
-    { id: 4, name: 'Sac à dos avec cape', price: 20, image: '../assets/produits/004.jpg' },
+    { id: 1, name: 'Lego superman', price: 5, image: '/assets/produits/001.webp' },
+    { id: 2, name: 'Figurine Superman', price: 15, image: '/assets/produits/002.jpg' },
+    { id: 3, name: 'Pack Superman 6 pièces', price: 30, image: '/assets/produits/003.webp' },
+    { id: 4, name: 'Sac à dos avec cape', price: 20, image: '/assets/produits/004.jpg' },
     // Add more products with images
 ];
 
@@ -113,18 +113,25 @@ const EShop = () => {
                 <Filter/>
                 {cartVisible && (
                     <div className="cart-panel">
-                        <button onClick={toggleCart} className="close-button">Close</button>
-                        {cart.map((product) => (
-                            <div key={product.id} className="cart-item">
-                                <span>{product.name}</span>
-                                <span>${product.price}</span>
-                                <button onClick={() => removeFromCart(product.id)}>Remove</button>
-                                <button onClick={() => decreaseQuantity(product.id)}>-</button>
-                                <span>{product.quantity || 1}</span>
-                                <button onClick={() => increaseQuantity(product.id)}>+</button>
-                            </div>
-                        ))}
-                        <button onClick={showConfirmation}>Checkout</button>
+                        <div className="cart-content">
+                            <button onClick={toggleCart} className="close-button">X</button>
+                            <div className="empty"></div>
+                            {cart.map((product) => (
+                                    <div key={product.id} className="cart-item">
+                                        <div className="leftc">
+                                            <span>{product.name}</span>
+                                            <span>${product.price}</span>
+                                        </div>
+                                        <div className="rightc">
+                                            <button onClick={() => removeFromCart(product.id)}>Remove</button>
+                                            <button onClick={() => decreaseQuantity(product.id)}>-</button>
+                                            <span>{product.quantity || 1}</span>
+                                            <button onClick={() => increaseQuantity(product.id)}>+</button>
+                                        </div>
+                                    </div>
+                                ))}
+                        </div>
+                        <button className='checkout-btn' onClick={showConfirmation}>Checkout</button>
                     </div>
                 )}
                 {showConfirmationPopup && (

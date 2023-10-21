@@ -6,6 +6,7 @@
   .login{
     background: rgb(2,0,36);
     background: linear-gradient(123deg, rgba(2,0,36,1) 74%, rgba(180, 32, 47, 0.538) 100%);
+    backdrop-filter: blur(3px);
     border-radius: 20px;
     width: 70%;
     .title{
@@ -54,7 +55,7 @@
           height: 25px;
         }
       }
-      button{
+      .log{
         padding: 1em 1.8em;
         margin: 1em 0;
         background: linear-gradient(to right, rgba(7, 51, 140, 0.7), rgba(180, 32, 46, 1));
@@ -64,11 +65,12 @@
         width: 100%;
         letter-spacing: 3px;
         font-size: 1.2em;
+        border: none;
         border-radius: 20px;
         transition: all .5s ease-in-out;
         cursor: pointer;
         &:hover{
-          background: linear-gradient(to right, #07338c, #b4202e);
+          background: linear-gradient(to top right, #07338c, #b4202e);
         }
       }
     }
