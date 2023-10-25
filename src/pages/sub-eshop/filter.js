@@ -67,20 +67,25 @@ class Filter extends Component {
 
     return (
       <div className='filter'>
-        <h1>Filter</h1>
+        <h2>Filtres</h2>
         <div>
-          <p>Price Range:</p>
-          <p>{priceRange}€</p>
+          <p>Prix:</p>
           <input
             type="range"
             min={0}
             max={200}
             value={priceRange}
             onChange={this.handlePriceChange}
-          />
+            />
+          <div className="ran">
+            <p>0€</p>
+            <p className='rd'>{priceRange}€</p>
+            <p>200€</p>
+          </div>  
         </div>
-        <div>
+        <div className='cat'>
           <p>Catégories</p>
+          <div className="ln"></div>
           {Object.keys(categories).map((category) => (
             <div key={category}>
               <label>
@@ -94,8 +99,9 @@ class Filter extends Component {
             </div>
           ))}
         </div>
-        <div>
+        <div className='cat'>
           <p>Colors</p>
+          <div className="ln"></div>
           {Object.keys(colors).map((color) => (
             <div key={color}>
               <label>
@@ -109,8 +115,9 @@ class Filter extends Component {
             </div>
           ))}
         </div>
-        <div>
+        <div className='cat'>
           <p>Universes</p>
+          <div className="ln"></div>
           {Object.keys(universes).map((universe) => (
             <div key={universe}>
               <label>

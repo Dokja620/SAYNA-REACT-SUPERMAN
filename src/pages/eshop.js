@@ -8,10 +8,14 @@ import CheckoutPopup from './sub-eshop/CheckoutPopup';
 import Filter from './sub-eshop/filter';
 
 const products = [
-    { id: 1, name: 'Lego superman', price: 5, image: '/assets/produits/001.webp' },
-    { id: 2, name: 'Figurine Superman', price: 15, image: '/assets/produits/002.jpg' },
-    { id: 3, name: 'Pack Superman 6 pièces', price: 30, image: '/assets/produits/003.webp' },
-    { id: 4, name: 'Sac à dos avec cape', price: 20, image: '/assets/produits/004.jpg' },
+    { id: 1, name: 'Lego superman', price: 5, image: require('../assets/produits/001.png') },
+    { id: 2, name: 'Figurine Superman', price: 15, image: require('../assets/produits/002.png') },
+    { id: 3, name: 'Pack Superman 6 pièces', price: 30, image: require('../assets/produits/003.png') },
+    { id: 4, name: 'Sac à dos avec cape', price: 20, image: require('../assets/produits/004.png') },
+    { id: 1, name: 'Mug Superman', price: 7, image: require('../assets/produits/001.png') },
+    { id: 2, name: 'Cape de Superman', price: 10, image: require('../assets/produits/002.png') },
+    { id: 3, name: 'Carte Superman collector', price: 50, image: require('../assets/produits/003.png') },
+    { id: 4, name: 'Montre Superman', price: 25, image: require('../assets/produits/004.png') },
     // Add more products with images
 ];
 
@@ -110,43 +114,51 @@ const EShop = () => {
                         <p className='buy'>{cart.length}</p>
                     </div>
                 </div>
-                <Filter/>
-                {cartVisible && (
+                <Filter />
+                {cartVisible && !showConfirmationPopup && !showCheckoutPopup && (
                     <div className="cart-panel">
                         <div className="cart-content">
                             <button onClick={toggleCart} className="close-button">X</button>
                             <div className="empty"></div>
                             {cart.map((product) => (
-                                    <div key={product.id} className="cart-item">
-                                        <div className="leftc">
-                                            <span>{product.name}</span>
-                                            <span>${product.price}</span>
-                                        </div>
-                                        <div className="rightc">
-                                            <button onClick={() => removeFromCart(product.id)}>Remove</button>
-                                            <button onClick={() => decreaseQuantity(product.id)}>-</button>
-                                            <span>{product.quantity || 1}</span>
-                                            <button onClick={() => increaseQuantity(product.id)}>+</button>
-                                        </div>
+                                <div key={product.id} className="cart-item">
+                                    <div className="leftc">
+                                        <p>{product.name}</p>
+                                        <p>${product.price}</p>
                                     </div>
-                                ))}
+                                    <div className="rightc">
+                                        <button onClick={() => removeFromCart(product.id)}>Retirer</button>
+                                        <button onClick={() => decreaseQuantity(product.id)}>-</button>
+                                        <span className='quant'>{product.quantity || 1}</span>
+                                        <button onClick={() => increaseQuantity(product.id)}>+</button>
+                                    </div>
+                                </div>
+                            ))}
+                            <div className="empty"></div>
                         </div>
-                        <button className='checkout-btn' onClick={showConfirmation}>Checkout</button>
+                        <button className='checkout-btn' onClick={showConfirmation}>Payer</button>
                     </div>
                 )}
                 {showConfirmationPopup && (
                     <ConfirmationPopup
-                        onConfirm={showCheckout}
+                        onConfirm={() => {
+                            showCheckout();
+                            hideConfirmation();
+                        }}
                         onCancel={hideConfirmation}
                     />
                 )}
                 {showCheckoutPopup && (
                     <CheckoutPopup
                         total={calculateTotal()}
-                        onCheckout={handleCheckout}
+                        onCheckout={() => {
+                            handleCheckout();
+                            hideCheckout();
+                        }}
                         onCancel={hideCheckout}
                     />
                 )}
+
                 <div className="shop">
                     {products.map((product) => (
                         <Product
