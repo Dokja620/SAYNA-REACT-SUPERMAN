@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SAYNA-REACT-SUPERMAN/static/css/main.9dd35229.css",
-    "main.js": "/SAYNA-REACT-SUPERMAN/static/js/main.3e85af0a.js",
+    "main.css": "/SAYNA-REACT-SUPERMAN/static/css/main.9528aff7.css",
+    "main.js": "/SAYNA-REACT-SUPERMAN/static/js/main.282449ca.js",
     "static/media/img20.png": "/SAYNA-REACT-SUPERMAN/static/media/img20.28ad15472d81d737a3eb.png",
     "static/media/img11.png": "/SAYNA-REACT-SUPERMAN/static/media/img11.f3079e7bec1e6f1393b5.png",
     "static/media/img16.png": "/SAYNA-REACT-SUPERMAN/static/media/img16.8d8ef511f83f1f2ed803.png",
@@ -31,11 +31,11 @@
     "index.html": "/SAYNA-REACT-SUPERMAN/index.html",
     "static/media/user-svgrepo-com.svg": "/SAYNA-REACT-SUPERMAN/static/media/user-svgrepo-com.42499be8aecdb8e6176cf507fadedf70.svg",
     "static/media/close-svgrepo-com.svg": "/SAYNA-REACT-SUPERMAN/static/media/close-svgrepo-com.200403ae69a577d743f22b148a223c7f.svg",
-    "main.9dd35229.css.map": "/SAYNA-REACT-SUPERMAN/static/css/main.9dd35229.css.map",
-    "main.3e85af0a.js.map": "/SAYNA-REACT-SUPERMAN/static/js/main.3e85af0a.js.map"
+    "main.9528aff7.css.map": "/SAYNA-REACT-SUPERMAN/static/css/main.9528aff7.css.map",
+    "main.282449ca.js.map": "/SAYNA-REACT-SUPERMAN/static/js/main.282449ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.9dd35229.css",
-    "static/js/main.3e85af0a.js"
+    "static/css/main.9528aff7.css",
+    "static/js/main.282449ca.js"
   ]
 }
