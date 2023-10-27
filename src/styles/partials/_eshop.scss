@@ -60,10 +60,14 @@
     padding: 15px 0;
     border-radius: 15px;
     border: 2px solid #3944bc96;
-    background: #1338be;
+    background: #1338be79;
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
+    transition: all .25s ease-in-out;
+    &:hover{
+        background: #1338be;
+    }
   }
 }
 
@@ -160,6 +164,7 @@ button{
   padding: 0 10px;
   min-height: 250px;
   height: fit-content;
+  
   background: #07338c3d;
   backdrop-filter: blur(5px);
   border-radius: 2em;

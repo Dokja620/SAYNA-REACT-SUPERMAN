@@ -12,10 +12,10 @@ const products = [
     { id: 2, name: 'Figurine Superman', price: 15, image: require('../assets/produits/002.png') },
     { id: 3, name: 'Pack Superman 6 pièces', price: 30, image: require('../assets/produits/003.png') },
     { id: 4, name: 'Sac à dos avec cape', price: 20, image: require('../assets/produits/004.png') },
-    { id: 1, name: 'Mug Superman', price: 7, image: require('../assets/produits/001.png') },
-    { id: 2, name: 'Cape de Superman', price: 10, image: require('../assets/produits/002.png') },
-    { id: 3, name: 'Carte Superman collector', price: 50, image: require('../assets/produits/003.png') },
-    { id: 4, name: 'Montre Superman', price: 25, image: require('../assets/produits/004.png') },
+    { id: 5, name: 'Mug Superman', price: 7, image: require('../assets/produits/001.png') },
+    { id: 6, name: 'Cape de Superman', price: 10, image: require('../assets/produits/002.png') },
+    { id: 7, name: 'Carte Superman collector', price: 50, image: require('../assets/produits/003.png') },
+    { id: 8, name: 'Montre Superman', price: 25, image: require('../assets/produits/004.png') },
     // Add more products with images
 ];
 

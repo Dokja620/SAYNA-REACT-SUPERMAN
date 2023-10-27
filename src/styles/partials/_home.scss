@@ -1,3 +1,242 @@
 #intro{
     background: url(/src/assets/images/img1.png) 75% 25%/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .titref{
+        margin: 0 0 0 5%;
+    }
+    h1{
+        font-family: 'Adv';
+        text-shadow: 1px 1px #0004ff92, 2px 2px #000;
+        font-size: 7vw;
+        margin: 0;
+    }
+    h2{
+        font-family: 'H1 B';
+        text-transform: uppercase;
+        font-size: 2em;
+        text-shadow: 1px 1px #ff000064, 2px 2px #000;
+    }
+}
+@media (max-width: 450px) {
+    #intro h1{
+        font-size: 2em;
+    }
+}
+
+.text-block,  .titles-stuff{
+    margin: 0 12%;
+    text-align: justify;
+    h3{
+        font-family: 'H1 B';
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        text-shadow: 1px 1px #000, 2px 2px #fff;
+        cursor: grab;
+    }
+}
+
+#versus{
+    background: url(/src/assets/images/img11.png);
+    box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 700px;
+    text-align: justify;
+    padding: 15%;
+    filter: grayscale(100%);
+    h3{
+        font-family: 'H1 B';
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        text-shadow: 1px 1px #000, 2px 2px #fff;
+    }
+}
+
+/*Movie trailer part*/
+.media{
+    display: flex;
+    align-items: center;
+    margin: 10% auto;
+    width: 80%;
+    h3{
+        font-family: 'Text B';
+    }
+    .synopsis{
+        height: 230px;
+        display: flex;
+        background: linear-gradient(to bottom right, #4e4940, #091e2a);
+        border-radius: 0 20px 20px 0;
+        .texts{
+            padding: 10px 15px;
+        }
+    }
+    .arrow{
+        margin: 0 30px;
+    }
+}
+    /*Responsive partie trailer*/
+    @media screen and (max-width: 1200px) {
+        .media{
+            width: 100%;
+            .synopsis{
+                height: max-content;
+            }
+        }
+    }
+    @media screen and (max-width: 800px) {
+        .media{
+            width: 90%;
+            .synopsis{
+                border-radius: 0 20px 20px 20px;
+                height: 100%;
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 550px) {
+        .media{
+            width: 75%;
+            .synopsis{
+                margin-top: 200px;
+                height: 100%;
+                position: relative;
+                img{
+                    display: block;
+                    position: absolute;
+                    top: -240px;
+                }
+            }
+            .arrow{
+                display: none;
+            }
+        }
+        
+    }
+
+/*Hors section, partie vidéo... */
+.video{
+    text-align: center;
+    img{
+        width: 80%;
+        transition: all .25s ease-in-out;
+        &:hover{
+            filter: drop-shadow(0 0 10px white);
+        }
+    }
+}
+
+/*Last part the form*/
+#contact{
+    background: url(/src//assets/images/img16.png);
+    background-size: cover;
+    h3{
+        font-family: 'H1 B';
+        text-shadow: 1px 1px #fff, 2px 2px #000;
+        font-size: 1.5em;
+    }
+    h2{
+        font-family: 'Text';
+    }
+}
+form{
+    border-top: 3px solid #88868668;
+    border-bottom: 3px solid #88868668;
+    background: #f135351b;
+    backdrop-filter: blur(5px);
+    padding: 5% 12%;
+    margin: 15% 0;
+    line-height: 30px;
+    input, select{
+        font-family: 'Texte';
+        background: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 100%;
+        &:focus{
+            outline: none;
+        }
+    }
+    select>option{
+        background-color: #091e2a35;
+    }
+    .btn2 {
+        margin: 15px;
+        padding: 5px 15px;
+        background: none;
+        border: 2px solid;
+        border-image: linear-gradient(to right, #eddebf75, #19587d75) 1;
+        color: #fff;
+        transition: all .25s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            background: none;
+            border-image: linear-gradient(to right, #EDDEBF, #19587D) 1;
+        }
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+    .conf{
+        font-family: 'Adv';
+        letter-spacing: 2px;
+    }
+    button{
+        margin: 10px 0;
+        padding: 15px 25px;
+        border-radius: 15px;
+        border: 2px solid #3944bc96;
+        background: #1338be79;
+        text-transform: uppercase;
+        color: #fff;
+        cursor: pointer;
+        transition: all .25s ease-in-out;
+        &:hover{
+            background: #1338be;
+        }
+    }
+}
+.one, .two, .three, .four{
+    margin: 15px 0;
+}
+
+/*the real last part... Last but not a least... Quotes*/
+#quotes{
+    margin: 25% 10%;
+    img{
+        width: 10vh;
+    }
+    .leftg{
+        text-align: left;
+    }
+    .quotes{
+        text-align: center;
+        margin: 5% 0;
+    }
+    .rightd{
+        text-align: right;
+    }
+    .point{
+        display: flex;
+        justify-content: center;
+        .dot{
+            margin: 5px 2px;
+            width: 10px;
+            height: 10px;
+            border-radius: 15px;
+            border: 1px solid #429ef5;;
+        }
+    }
+}
+/*END!*/
+
+.formulaire{
+    background: none!important;
+    text-align: left!important;
 }
