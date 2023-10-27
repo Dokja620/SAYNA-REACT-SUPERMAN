@@ -3,6 +3,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import user from './sub-account/user-svgrepo-com.svg';
 import eye from './sub-account/eye-svgrepo-com.svg';
+import google from './sub-account/spons-1.png';
+import facebook from './sub-account/spons-2.png';
+import apple from './sub-account/spons-3.png';
 
 
 const Account = () => {
@@ -49,6 +52,7 @@ const Account = () => {
             <div className="forgot">
               <p style={{textDecoration: 'underline', fontSize: '.8em', cursor: 'pointer'}}
               >Mot de passe oublié</p>
+              <div className='ln'></div>
             </div>
           </div>
           <Link to="/dashboard">
@@ -56,6 +60,12 @@ const Account = () => {
         </Link>
           <div className="forgot">
             <p>Connectez vous avec</p>
+            <div className="ln"></div>
+          </div>
+          <div className="spons">
+            <div><img src={google} alt="" /></div>
+            <div><img src={facebook} alt="" /></div>
+            <div><img src={apple} alt="" /></div>
           </div>
         </form>
       </div>

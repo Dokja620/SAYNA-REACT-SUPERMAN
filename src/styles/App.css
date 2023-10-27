@@ -5,6 +5,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 25px;
+  position: absolute;
+  width: 100%;
 }
 .navbar .nav-logo img {
   width: 25vw;
@@ -119,6 +121,7 @@ p {
 
 #intro {
   background: url(/src/assets/images/img1.png) 75% 25%/cover no-repeat;
+  box-shadow: inset 5px 75px 75px -9px #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -363,6 +366,7 @@ form button:hover {
 
 #shop-first {
   background: url(/src/assets/images/img20.png) 50% 50%/cover no-repeat;
+  box-shadow: inset 5px 75px 75px -9px #000000;
   display: flex;
   align-items: center;
 }
@@ -814,9 +818,15 @@ button {
 
 #login {
   background: url(/src/assets/images/img19.png) 75% 25%/cover no-repeat;
+  box-shadow: inset 5px 75px 75px -9px #000000;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#login h1 {
+  text-shadow: none;
+  font-size: 1.5em;
+  margin-top: 35px;
 }
 #login .login {
   background: rgb(2, 0, 36);
@@ -829,14 +839,16 @@ button {
   text-align: center;
 }
 #login .login .reg {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0 15px;
 }
 #login .login form {
   background: linear-gradient(to bottom right, #717b83, rgba(113, 123, 131, 0.1843137255));
   border: 2px solid rgba(113, 123, 131, 0.5333333333);
   border-radius: 15px;
   margin: 20px 15%;
-  padding: 25px 50px;
+  padding: 25px;
 }
 #login .login form label {
   font-family: "H1 B";
@@ -846,7 +858,7 @@ button {
   border: 2px solid #8c9196;
   border-radius: 5px;
   width: 100%;
-  padding: 0.5em;
+  padding: 0.1em 0.5em;
   display: flex;
   align-items: center;
   margin-bottom: 25px;
@@ -857,7 +869,7 @@ button {
   padding: 0.2em;
   width: 90%;
   margin-left: 5px;
-  color: #1C274C;
+  color: #fff;
   font-family: "Text";
   font-size: 1em;
 }
@@ -865,12 +877,13 @@ button {
   outline: none;
 }
 #login .login form .check input::placeholder {
-  color: #1C274C;
+  color: #e0e3e6;
   font-family: "Text";
   font-size: 1em;
 }
 #login .login form .check img {
   height: 25px;
+  filter: brightness(0) saturate(100%) invert(66%) sepia(10%) saturate(195%) hue-rotate(169deg) brightness(86%) contrast(83%);
 }
 #login .login form .log {
   padding: 1em 1.8em;
@@ -889,6 +902,31 @@ button {
 }
 #login .login form .log:hover {
   background: linear-gradient(to top right, #07338c, #b4202e);
+}
+
+.forgot {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+.forgot p {
+  min-width: 45%;
+}
+.forgot .ln {
+  width: 100%;
+  height: 1px;
+  background: #8c9196;
+}
+
+@media (min-width: 900px) {
+  .forgot p {
+    min-width: 20%;
+  }
+}
+.spons {
+  display: flex;
+  gap: 35px;
+  margin: 15px 0 0;
 }
 
 #dash button {
