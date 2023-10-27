@@ -829,11 +829,13 @@ button {
   margin-top: 35px;
 }
 #login .login {
+  margin: 250px 0 100px 0;
   background: rgb(2, 0, 36);
   background: linear-gradient(123deg, rgb(2, 0, 36) 74%, rgba(180, 32, 47, 0.538) 100%);
   backdrop-filter: blur(3px);
   border-radius: 20px;
   width: 70%;
+  max-width: 800px;
 }
 #login .login .title {
   text-align: center;
@@ -847,7 +849,7 @@ button {
   background: linear-gradient(to bottom right, #717b83, rgba(113, 123, 131, 0.1843137255));
   border: 2px solid rgba(113, 123, 131, 0.5333333333);
   border-radius: 15px;
-  margin: 20px 15%;
+  margin: 20px 15% 15% 15%;
   padding: 25px;
 }
 #login .login form label {

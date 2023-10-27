@@ -10,11 +10,13 @@
     margin-top: 35px;
   }
   .login{
+    margin: 250px 0 100px 0;
     background: rgb(2,0,36);
     background: linear-gradient(123deg, rgba(2,0,36,1) 74%, rgba(180, 32, 47, 0.538) 100%);
     backdrop-filter: blur(3px);
     border-radius: 20px;
     width: 70%;
+    max-width: 800px;
     .title{
       text-align: center;
     }
@@ -27,7 +29,7 @@
       background: linear-gradient(to bottom right, #717b83, #717b832f);
       border: 2px solid #717b8388;
       border-radius: 15px;
-      margin: 20px 15%;
+      margin: 20px 15% 15% 15%;
       padding: 25px;
       label{
         font-family: 'H1 B';
