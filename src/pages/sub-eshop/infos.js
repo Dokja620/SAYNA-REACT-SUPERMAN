@@ -4,8 +4,15 @@ import { Link } from 'react-router-dom';
 const InfosComponent = () => {
   return (
     <div className='page'>
-      {/* Your info content here */}
-      <Link to="/e-shop">Go back to e-shop</Link>
+      <div className="back">
+        <p>
+          E-shop /
+          <span>
+            <Link to="/e-shop">Fiche du produits</Link>
+          </span>
+        </p>
+        <h3>Page en cours de construction…</h3>
+      </div>
     </div>
   );
 }

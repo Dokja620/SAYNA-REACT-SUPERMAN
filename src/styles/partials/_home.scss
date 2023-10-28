@@ -1,6 +1,6 @@
 #intro{
     background: url(/src/assets/images/img1.png) 75% 25%/cover no-repeat;
-    box-shadow: inset 5px 75px 75px -9px #000000;
+    box-shadow: inset 5px 75px 75px -9px #000000, rgb(0, 0, 0) 0em -3em 30px inset;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,9 +38,23 @@
     }
 }
 
+// smooth page transition
+    #cine{
+        box-shadow: inset 5px 75px 75px -9px #000000;
+        padding-top: 5%;
+    }
+    #ally{
+        box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
+        padding-bottom: 5%;
+    }
+    #trailer{
+        box-shadow: inset 5px 75px 75px -9px #000000;
+        padding-top: 5%;
+    }
+
 #versus{
     background: url(/src/assets/images/img11.png);
-    box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
+    box-shadow: inset 5px 75px 75px -9px #000000, rgb(0, 0, 0) 0em -3em 30px inset;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;

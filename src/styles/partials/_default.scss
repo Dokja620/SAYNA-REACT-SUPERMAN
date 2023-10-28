@@ -14,12 +14,12 @@
 }
 
 body{
-    background: #000;
+    background: linear-gradient(to right, #000000 0%, #212E3E 100%);
 }
 
 .page{
     min-height: 100vh;
-    box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
+    // box-shadow: rgb(0, 0, 0) 0em -3em 30px inset;
 }
 
 /*partie animation, fade in*/

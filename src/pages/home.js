@@ -1,3 +1,5 @@
+// home.js
+
 import React from 'react';
 import dcLogo from '../assets/logos/logoDC.png';
 
@@ -60,7 +62,7 @@ const Home = () => {
                     <div><img src="" alt="" /></div>
                 </div>
             </div>
-            <div id="enemy">
+            <div id="ally">
                 <div className="text-block">
                     <h3>ALLIÉS</h3>
                     <p>

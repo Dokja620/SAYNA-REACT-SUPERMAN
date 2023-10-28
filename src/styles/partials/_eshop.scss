@@ -1,12 +1,15 @@
 #shop-first{
     background: url(/src/assets/images/img20.png) 50% 50%/cover no-repeat;
-    box-shadow: inset 5px 75px 75px -9px #000000;
+    box-shadow: inset 5px 75px 75px -9px #000000, rgb(0, 0, 0) 0em -3em 30px inset;
     display: flex;
     align-items: center;
 }
 
 .below{
+    box-shadow: inset 5px 75px 75px -9px #000000;
     text-align: center;
+    height: 100%;
+    padding: 5% 0;
     img{
         width: 10vw;
         max-width: 65px;
@@ -131,7 +134,6 @@
     }
   }
 
-
 #shop-second{
     position: relative;
     overflow-x: hidden;
@@ -165,7 +167,6 @@ button{
   padding: 0 10px;
   min-height: 250px;
   height: fit-content;
-  
   background: #07338c3d;
   backdrop-filter: blur(5px);
   border-radius: 2em;
@@ -464,5 +465,23 @@ button{
         font-family: 'Text';
       }
     }
+  }
+}
+
+.back{
+  padding: 175px 12% 0 45px;
+  background: url(/src/pages/sub-account/construction.gif) bottom center/50vw no-repeat;
+  height: 100vh;
+  span{
+    margin-left: 5px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  h3{
+    font-family: 'H1 B';
+    font-size: 2em;
+    margin-top: 35px;
+    text-shadow: 1px 1px #000, 2px 2px #fff, -1px -1px #2600ff, -2px -2px #ff0000;
   }
 }

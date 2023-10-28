@@ -1,3 +1,5 @@
+//eshop.js
+
 import React, { useState } from 'react';
 import arrowDown from '../assets/flèche_down_header.png';
 import shoppingCart from '../assets/shopping-cart-svgrepo-com.svg';

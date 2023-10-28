@@ -1,4 +1,5 @@
-// src/Game.js
+// account.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import user from './sub-account/user-svgrepo-com.svg';

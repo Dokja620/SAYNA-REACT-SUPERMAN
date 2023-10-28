@@ -1,6 +1,6 @@
 #login{
   background: url(/src/assets/images/img19.png) 75% 25%/cover no-repeat;
-  box-shadow: inset 5px 75px 75px -9px #000000;
+  box-shadow: inset 5px 75px 75px -9px #000000, rgb(0, 0, 0) 0em -3em 30px inset;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +12,8 @@
   .login{
     margin: 250px 0 100px 0;
     background: rgb(2,0,36);
-    background: linear-gradient(123deg, rgba(2,0,36,1) 74%, rgba(180, 32, 47, 0.538) 100%);
+    background: rgb(177,19,19);
+    background: radial-gradient(circle at top right, rgba(177, 19, 19, 1) 0%, rgba(33, 46, 62, 1) 31%,  rgba(32, 46, 66, 1) 66%, rgba(7, 51, 140, 1) 89%);
     backdrop-filter: blur(3px);
     border-radius: 20px;
     width: 70%;
@@ -117,13 +118,13 @@
   button{
     padding: .9em 1.8em;
     margin: 1em 0;
-    background: linear-gradient(to right, rgba(7, 51, 140, 0.7), rgba(180, 32, 46, 1));
+    border: 3px solid #07338c4a;
+    background: linear-gradient(to right, #07338c70, #b4202e70);
     color: #fff;
     font-family: 'H1 B';
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 1.2em;
-    border: none;
     border-radius: 20px;
     transition: all .5s ease-in-out;
     cursor: pointer;
@@ -137,12 +138,14 @@
   display: flex;
   align-items: center;
   background:  url(/src/assets/images/img37.png) center/cover no-repeat;
+  box-shadow: inset 5px 75px 75px -9px #000000;
 }
 
 .identity{
+  box-shadow: inset 5px 75px 75px -9px #182d3e , rgb(0, 0, 0) 0em -3em 30px inset;
   display: flex;
   gap: 2%;
-  padding: 0 12%;
+  padding: 15% 12% 0;
   position: relative;
   .modal{
     position: fixed;

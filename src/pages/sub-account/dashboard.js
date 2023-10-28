@@ -1,3 +1,5 @@
+// dashboard.js
+
 import React, { useState } from 'react';
 import ConfirmationModal from './popup'; // Import your custom modal component
 
