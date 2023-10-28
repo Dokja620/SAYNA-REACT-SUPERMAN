@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SAYNA-REACT-SUPERMAN/static/css/main.9528aff7.css",
-    "main.js": "/SAYNA-REACT-SUPERMAN/static/js/main.282449ca.js",
+    "main.css": "/SAYNA-REACT-SUPERMAN/static/css/main.c33d8c4c.css",
+    "main.js": "/SAYNA-REACT-SUPERMAN/static/js/main.50c2f709.js",
     "static/media/img20.png": "/SAYNA-REACT-SUPERMAN/static/media/img20.28ad15472d81d737a3eb.png",
     "static/media/img11.png": "/SAYNA-REACT-SUPERMAN/static/media/img11.f3079e7bec1e6f1393b5.png",
     "static/media/img16.png": "/SAYNA-REACT-SUPERMAN/static/media/img16.8d8ef511f83f1f2ed803.png",
@@ -11,7 +11,9 @@
     "static/media/img15.png": "/SAYNA-REACT-SUPERMAN/static/media/img15.02dd7977dd9d8cc3cc2c.png",
     "static/media/001.png": "/SAYNA-REACT-SUPERMAN/static/media/001.dd5f6665bd6cdacf988f.png",
     "static/media/003.png": "/SAYNA-REACT-SUPERMAN/static/media/003.03124c7d89e38ea93f50.png",
+    "static/media/loader.gif": "/SAYNA-REACT-SUPERMAN/static/media/loader.cc8ffc8a864fea8a5727.gif",
     "static/media/sup2.png": "/SAYNA-REACT-SUPERMAN/static/media/sup2.a8ac1cd172e8f80dd3dd.png",
+    "static/media/construction.gif": "/SAYNA-REACT-SUPERMAN/static/media/construction.e5c19b68fc0f40e2228a.gif",
     "static/media/004.png": "/SAYNA-REACT-SUPERMAN/static/media/004.754207760be1727c282e.png",
     "static/media/img37.png": "/SAYNA-REACT-SUPERMAN/static/media/img37.bace6f810ec35d64493d.png",
     "static/media/002.png": "/SAYNA-REACT-SUPERMAN/static/media/002.6eb0d5abffec62f339dc.png",
@@ -31,11 +33,11 @@
     "index.html": "/SAYNA-REACT-SUPERMAN/index.html",
     "static/media/user-svgrepo-com.svg": "/SAYNA-REACT-SUPERMAN/static/media/user-svgrepo-com.42499be8aecdb8e6176cf507fadedf70.svg",
     "static/media/close-svgrepo-com.svg": "/SAYNA-REACT-SUPERMAN/static/media/close-svgrepo-com.200403ae69a577d743f22b148a223c7f.svg",
-    "main.9528aff7.css.map": "/SAYNA-REACT-SUPERMAN/static/css/main.9528aff7.css.map",
-    "main.282449ca.js.map": "/SAYNA-REACT-SUPERMAN/static/js/main.282449ca.js.map"
+    "main.c33d8c4c.css.map": "/SAYNA-REACT-SUPERMAN/static/css/main.c33d8c4c.css.map",
+    "main.50c2f709.js.map": "/SAYNA-REACT-SUPERMAN/static/js/main.50c2f709.js.map"
   },
   "entrypoints": [
-    "static/css/main.9528aff7.css",
-    "static/js/main.282449ca.js"
+    "static/css/main.c33d8c4c.css",
+    "static/js/main.50c2f709.js"
   ]
 }
