@@ -7,8 +7,6 @@ const PasswordRecovery = () => {
   const [recoverySent] = useState(false);
 
   const handleRecoverPassword = () => {
-    // Implement the logic to send a recovery email
-    // You can set recoverySent to true when the email is successfully sent
   };
 
   return (

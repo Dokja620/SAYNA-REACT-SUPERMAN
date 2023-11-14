@@ -1,7 +1,7 @@
 // dashboard.js
 
 import React, { useState } from 'react';
-import ConfirmationModal from './popup'; // Import your custom modal component
+import ConfirmationModal from './popup';
 
 const Dashboard = () => {
   const [isEditing, setIsEditing] = useState(false);
@@ -15,16 +15,13 @@ const Dashboard = () => {
     addressTwo: 'madagascar',
   });
 
-  // const [newsletter, setNewsletter] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleLogoutClick = () => {
-    // Show the logout confirmation popup
     setIsModalOpen(true);
   };
 
   const handleLogoutConfirm = () => {
-    // Perform logout action and redirect to /account
     setIsModalOpen(false);
     window.location.href = '/account';
   };
@@ -35,12 +32,7 @@ const Dashboard = () => {
 
   const handleSaveInfoClick = () => {
     setIsEditing(false);
-    // Save the modified user info (you can implement your logic here)
   };
-
-  // const handleNewsletterChange = (e) => {
-  //   setNewsletter(e.target.checked);
-  // };
 
   return (
     <div id='dash'>
@@ -145,7 +137,6 @@ const Dashboard = () => {
               <button>Enregistrer</button>
             </section>
 
-            {/* Render the logout confirmation modal */}
             <ConfirmationModal
               isOpen={isModalOpen}
               onClose={() => setIsModalOpen(false)}

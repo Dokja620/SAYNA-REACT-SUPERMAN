@@ -251,6 +251,28 @@ p {
   cursor: grab;
 }
 
+.img-block {
+  margin: 5% 12%;
+  display: flex;
+  justify-content: space-around;
+}
+.img-block div {
+  margin: 0 15px;
+}
+.img-block img {
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.25s ease-in-out;
+}
+.img-block img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 450px) {
+  .img-block {
+    flex-wrap: wrap;
+  }
+}
 #cine {
   box-shadow: inset 5px 75px 75px -9px #000000;
   padding-top: 5%;
@@ -940,7 +962,7 @@ button {
 .back h3 {
   font-family: "H1 B";
   font-size: 2em;
-  margin-top: 35px;
+  text-align: center;
   text-shadow: 1px 1px #000, 2px 2px #fff, -1px -1px #2600ff, -2px -2px #ff0000;
 }
 
@@ -1185,6 +1207,19 @@ section div {
   margin: 0 5px 0;
 }
 
+.bg-register {
+  font-family: "text";
+}
+.bg-register input {
+  margin-bottom: 15px;
+}
+.bg-register h3 {
+  font-family: "H1 B";
+  font-size: 1.5em;
+  text-shadow: 1px 1px #000, 2px 2px #fff;
+  cursor: grab;
+}
+
 footer {
   margin: 17% 0 2%;
 }
@@ -1212,6 +1247,31 @@ footer p {
 }
 .footsoc div img:hover {
   filter: grayscale(50%) brightness(70%) sepia(100%) hue-rotate(5deg) saturate(500%) contrast(1);
+}
+
+.not-found {
+  padding: 20% 12%;
+}
+.not-found .up {
+  background: url(/src/pages/404/404.gif);
+  height: 100%;
+}
+.not-found .down .butt {
+  font-family: "Text";
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px 0;
+  border-radius: 15px;
+  border: 2px solid rgba(57, 68, 188, 0.5882352941);
+  background: rgba(19, 56, 190, 0.4745098039);
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.not-found .down .butt:hover {
+  background: #1338be;
 }
 
 /*# sourceMappingURL=App.css.map */

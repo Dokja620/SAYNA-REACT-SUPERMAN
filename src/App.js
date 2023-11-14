@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import Navbar from './shared/navbar';
 import Footer from './shared/footer';
-import LoadingSpinner from './pages/loader/loader'; // Import your loading spinner component
+import LoadingSpinner from './pages/loader/loader';
 
 import Home from './pages/home';
 import Eshop from './pages/eshop';
@@ -12,12 +12,12 @@ import Infos from './pages/sub-eshop/infos';
 import Registration from './pages/sub-account/Registration';
 import Dashboard from './pages/sub-account/dashboard';
 import PasswordRecovery from './pages/sub-account/recovery';
+import NotFound from './pages/notfound';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading for 2 seconds (you can replace this with your actual data fetching logic)
     setTimeout(() => {
       setIsLoading(false);
     }, 2000);
@@ -28,10 +28,10 @@ function App() {
       <BrowserRouter>
         <Navbar />
         {isLoading ? (
-          <LoadingSpinner /> // Display the loading spinner while loading
+          <LoadingSpinner />
         ) : (
           <Routes>
-            <Route path="/" element={<Navigate to="/home" replace />} />
+            <Route path="/" exact component={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/e-shop" element={<Eshop />} />
             <Route path="/account" element={<Account />} />
@@ -39,6 +39,7 @@ function App() {
             <Route path="/Registration" element={<Registration />} />
             <Route path="/Dashboard" element={<Dashboard />} />
             <Route path="/recovery" element={<PasswordRecovery />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         )}
         <Footer />

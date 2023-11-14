@@ -1,0 +1,27 @@
+.not-found{
+    padding: 20% 12%;
+    .up{
+        background: url(/src/pages/404/404.gif);
+        height: 100%;
+    }
+    
+    .down{
+        .butt{
+            font-family: 'Text';
+            text-align: center;
+            width: 100%;
+            margin: 10px 0;
+            padding: 15px 0;
+            border-radius: 15px;
+            border: 2px solid #3944bc96;
+            background: #1338be79;
+            text-transform: uppercase;
+            color: #fff;
+            cursor: pointer;
+            transition: all .25s ease-in-out;
+            &:hover{
+                background: #1338be;
+            }
+        }
+    }
+}

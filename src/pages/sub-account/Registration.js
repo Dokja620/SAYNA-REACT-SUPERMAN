@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 const Registration = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
+  const [email, setLastEmail] = useState('');
+  const [password, setLastPassword] = useState('');
 
   const handleFirstNameChange = (e) => {
     setFirstName(e.target.value);
@@ -15,35 +17,65 @@ const Registration = () => {
     setLastName(e.target.value);
   };
 
+  const handleLastEmailChange = (e) => {
+    setLastEmail(e.target.value);
+  };
+
+  const handleLastPasswordChange = (e) => {
+    setLastPassword(e.target.value);
+  };
+
   return (
-    <div className="bg-account intro">
-      <h1>REGISTRATION</h1>
-      <Link to="/account">Back to Login</Link>
-      <form>
+    <div className="bg-register intro">
+      <Link to="/account">Retour à la page de connexion</Link>
+      <form className='regiss'>
+      <h3>INSCRIPTION</h3>
         <div className="form-group">
-          <label htmlFor="firstName">First Name</label>
+          <label htmlFor="firstName">Nom</label>
           <input
             type="text"
             id="firstName"
             name="firstName"
-            placeholder="Enter your first name"
+            placeholder="Entrez votre nom"
             value={firstName}
             onChange={handleFirstNameChange}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="lastName">Last Name</label>
+          <label htmlFor="lastName">Prénom(s)</label>
           <input
             type="text"
             id="lastName"
             name="lastName"
-            placeholder="Enter your last name"
+            placeholder="Entrez votre(vos) prénoms(s)"
             value={lastName}
             onChange={handleLastNameChange}
           />
         </div>
+        <div className="form-group">
+          <label htmlFor="lastName">Votre mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@gmail.com"
+            value={email}
+            onChange={handleLastEmailChange}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="lastName">Votre mail</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Votre mots de passe"
+            value={password}
+            onChange={handleLastPasswordChange}
+          />
+        </div>
         <Link to="/Dashboard">
-          <button type="submit">Continue to Subpage</button>
+          <button type="submit">Confirmer et se Connecter</button>
         </Link>
       </form>
     </div>

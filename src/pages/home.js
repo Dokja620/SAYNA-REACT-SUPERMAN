@@ -11,6 +11,16 @@ import trailer from '../assets/images/img15.png';
 import guillemet from '../assets/icon_guillemets_1.png';
 import guillemets from '../assets/icon_guillemets_2.png';
 
+import supFi from '../assets/char/001.png';
+import supFa from '../assets/char/002.png';
+import supFo from '../assets/char/003.png';
+import nemFi from '../assets/char/004.png';
+import nemFa from '../assets/char/005.png';
+import nemFo from '../assets/char/006.png';
+import allyFi from '../assets/char/007.png';
+import allyFa from '../assets/char/008.png';
+import allyFo from '../assets/char/009.png';
+
 
 const Home = () => {
     return ( 
@@ -39,9 +49,9 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="img-block">
-                    <div><img src="" alt="" /></div>
-                    <div><img src="" alt="" /></div>
-                    <div><img src="" alt="" /></div>
+                    <div><img src={supFi} alt="" /></div>
+                    <div><img src={supFa} alt="" /></div>
+                    <div><img src={supFo} alt="" /></div>
                 </div>
             </div>
             <div id="enemy">
@@ -57,9 +67,9 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="img-block">
-                    <div><img src="" alt="" /></div>
-                    <div><img src="" alt="" /></div>
-                    <div><img src="" alt="" /></div>
+                    <div><img src={nemFi} alt="" /></div>
+                    <div><img src={nemFa} alt="" /></div>
+                    <div><img src={nemFo} alt="" /></div>
                 </div>
             </div>
             <div id="ally">
@@ -74,9 +84,9 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="img-block">
-                    <div><img src="" alt="" /></div>
-                    <div><img src="" alt="" /></div>
-                    <div><img src="" alt="" /></div>
+                    <div><img src={allyFi} alt="" /></div>
+                    <div><img src={allyFa} alt="" /></div>
+                    <div><img src={allyFo} alt="" /></div>
                 </div>
             </div>
             <div id="versus">

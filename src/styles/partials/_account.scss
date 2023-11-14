@@ -241,3 +241,15 @@ section{
     margin: 0 5px 0;
   }
 }
+.bg-register{
+  font-family: 'text';
+  input{
+    margin-bottom: 15px;
+  }
+  h3{
+    font-family: 'H1 B';
+    font-size: 1.5em;
+    text-shadow: 1px 1px #000, 2px 2px #fff;
+    cursor: grab;
+  }
+}

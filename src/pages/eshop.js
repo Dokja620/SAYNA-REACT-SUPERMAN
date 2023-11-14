@@ -14,11 +14,10 @@ const products = [
     { id: 2, name: 'Figurine Superman', price: 15, image: require('../assets/produits/002.png') },
     { id: 3, name: 'Pack Superman 6 pièces', price: 30, image: require('../assets/produits/003.png') },
     { id: 4, name: 'Sac à dos avec cape', price: 20, image: require('../assets/produits/004.png') },
-    { id: 5, name: 'Mug Superman', price: 7, image: require('../assets/produits/001.png') },
-    { id: 6, name: 'Cape de Superman', price: 10, image: require('../assets/produits/002.png') },
-    { id: 7, name: 'Carte Superman collector', price: 50, image: require('../assets/produits/003.png') },
-    { id: 8, name: 'Montre Superman', price: 25, image: require('../assets/produits/004.png') },
-    // Add more products with images
+    { id: 5, name: 'Mug Superman', price: 7, image: require('../assets/produits/005.png') },
+    { id: 6, name: 'Cape de Superman', price: 10, image: require('../assets/produits/006.png') },
+    { id: 7, name: 'Carte Superman collector', price: 50, image: require('../assets/produits/007.png') },
+    { id: 8, name: 'Montre Superman', price: 25, image: require('../assets/produits/008.png') },
 ];
 
 const EShop = () => {
@@ -28,11 +27,9 @@ const EShop = () => {
     const [showCheckoutPopup, setShowCheckoutPopup] = useState(false);
 
     const addToCart = (product) => {
-        // Check if the product is already in the cart
         const existingProduct = cart.find((item) => item.id === product.id);
 
         if (existingProduct) {
-            // If the product is in the cart, update its quantity
             const updatedCart = cart.map((item) =>
                 item.id === product.id
                     ? { ...item, quantity: (item.quantity || 1) + 1 }
@@ -40,7 +37,6 @@ const EShop = () => {
             );
             setCart(updatedCart);
         } else {
-            // If the product is not in the cart, add it
             setCart([...cart, { ...product, quantity: 1 }]);
         }
     };
@@ -93,12 +89,11 @@ const EShop = () => {
     };
 
     const handleCheckout = () => {
-        // Perform the actual checkout logic here
-        hideCheckout(); // Close the checkout popup
-        hideConfirmation(); // Close the confirmation popup
-        setCart([]); // Reset the cart to an empty array
-        toggleCart(); // Close the cart panel
-        alert('Thanks for purchasing!');
+        hideCheckout();
+        hideConfirmation();
+        setCart([])
+        toggleCart();
+        alert('Vos Achats à bien été confirmer! Verifier votre mail pour voir les details de livraison');
     };
 
     return (
