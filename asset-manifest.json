@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SAYNA-REACT-SUPERMAN/static/css/main.c33d8c4c.css",
-    "main.js": "/SAYNA-REACT-SUPERMAN/static/js/main.50c2f709.js",
+    "main.css": "/SAYNA-REACT-SUPERMAN/static/css/main.31a96a00.css",
+    "main.js": "/SAYNA-REACT-SUPERMAN/static/js/main.450535bf.js",
     "static/media/img20.png": "/SAYNA-REACT-SUPERMAN/static/media/img20.28ad15472d81d737a3eb.png",
     "static/media/img11.png": "/SAYNA-REACT-SUPERMAN/static/media/img11.f3079e7bec1e6f1393b5.png",
     "static/media/img16.png": "/SAYNA-REACT-SUPERMAN/static/media/img16.8d8ef511f83f1f2ed803.png",
@@ -9,17 +9,23 @@
     "static/media/img19.png": "/SAYNA-REACT-SUPERMAN/static/media/img19.fd33cdf0c0eaad494074.png",
     "static/media/sup1.png": "/SAYNA-REACT-SUPERMAN/static/media/sup1.14e8539b2c5e9df8efa1.png",
     "static/media/img15.png": "/SAYNA-REACT-SUPERMAN/static/media/img15.02dd7977dd9d8cc3cc2c.png",
-    "static/media/001.png": "/SAYNA-REACT-SUPERMAN/static/media/001.dd5f6665bd6cdacf988f.png",
-    "static/media/003.png": "/SAYNA-REACT-SUPERMAN/static/media/003.03124c7d89e38ea93f50.png",
+    "static/media/001.png": "/SAYNA-REACT-SUPERMAN/static/media/001.e6f1d0cb0674662e31de.png",
+    "static/media/007.png": "/SAYNA-REACT-SUPERMAN/static/media/007.9e15dcbde31249ca2bef.png",
+    "static/media/003.png": "/SAYNA-REACT-SUPERMAN/static/media/003.1a416df32e4a70cd03d7.png",
     "static/media/loader.gif": "/SAYNA-REACT-SUPERMAN/static/media/loader.cc8ffc8a864fea8a5727.gif",
     "static/media/sup2.png": "/SAYNA-REACT-SUPERMAN/static/media/sup2.a8ac1cd172e8f80dd3dd.png",
     "static/media/construction.gif": "/SAYNA-REACT-SUPERMAN/static/media/construction.e5c19b68fc0f40e2228a.gif",
-    "static/media/004.png": "/SAYNA-REACT-SUPERMAN/static/media/004.754207760be1727c282e.png",
+    "static/media/004.png": "/SAYNA-REACT-SUPERMAN/static/media/004.3263fa039230c076d678.png",
+    "static/media/008.png": "/SAYNA-REACT-SUPERMAN/static/media/008.dc349141e19716ed495a.png",
+    "static/media/404.gif": "/SAYNA-REACT-SUPERMAN/static/media/404.642044f1b68b5ed3cb2d.gif",
     "static/media/img37.png": "/SAYNA-REACT-SUPERMAN/static/media/img37.bace6f810ec35d64493d.png",
-    "static/media/002.png": "/SAYNA-REACT-SUPERMAN/static/media/002.6eb0d5abffec62f339dc.png",
+    "static/media/002.png": "/SAYNA-REACT-SUPERMAN/static/media/002.41c9b844bc4e210e587a.png",
     "static/media/Rajdhani-Bold.ttf": "/SAYNA-REACT-SUPERMAN/static/media/Rajdhani-Bold.a5a831c1b8c8eb1b83ff.ttf",
     "static/media/Rajdhani-SemiBold.ttf": "/SAYNA-REACT-SUPERMAN/static/media/Rajdhani-SemiBold.7d928c2670caba5b9dd6.ttf",
     "static/media/Rajdhani-Medium.ttf": "/SAYNA-REACT-SUPERMAN/static/media/Rajdhani-Medium.bc852e7b1d43f40d7a51.ttf",
+    "static/media/005.png": "/SAYNA-REACT-SUPERMAN/static/media/005.48fab931cddcc63a46c0.png",
+    "static/media/006.png": "/SAYNA-REACT-SUPERMAN/static/media/006.61a44e663d9ce0cf8961.png",
+    "static/media/009.png": "/SAYNA-REACT-SUPERMAN/static/media/009.bfa4caa71bcb998ff07d.png",
     "static/media/img12.png": "/SAYNA-REACT-SUPERMAN/static/media/img12.631edd81a72da4facf19.png",
     "static/media/Adventure-Hollow.otf": "/SAYNA-REACT-SUPERMAN/static/media/Adventure-Hollow.48bdb1736e77936bbfe5.otf",
     "static/media/Cantarell-BoldOblique.ttf": "/SAYNA-REACT-SUPERMAN/static/media/Cantarell-BoldOblique.7a5e09a83b567bcf6017.ttf",
@@ -33,11 +39,11 @@
     "index.html": "/SAYNA-REACT-SUPERMAN/index.html",
     "static/media/user-svgrepo-com.svg": "/SAYNA-REACT-SUPERMAN/static/media/user-svgrepo-com.42499be8aecdb8e6176cf507fadedf70.svg",
     "static/media/close-svgrepo-com.svg": "/SAYNA-REACT-SUPERMAN/static/media/close-svgrepo-com.200403ae69a577d743f22b148a223c7f.svg",
-    "main.c33d8c4c.css.map": "/SAYNA-REACT-SUPERMAN/static/css/main.c33d8c4c.css.map",
-    "main.50c2f709.js.map": "/SAYNA-REACT-SUPERMAN/static/js/main.50c2f709.js.map"
+    "main.31a96a00.css.map": "/SAYNA-REACT-SUPERMAN/static/css/main.31a96a00.css.map",
+    "main.450535bf.js.map": "/SAYNA-REACT-SUPERMAN/static/js/main.450535bf.js.map"
   },
   "entrypoints": [
-    "static/css/main.c33d8c4c.css",
-    "static/js/main.50c2f709.js"
+    "static/css/main.31a96a00.css",
+    "static/js/main.450535bf.js"
   ]
 }
