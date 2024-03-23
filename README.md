@@ -2,7 +2,6 @@
 Évaluation - SUPERMAN
 
 links: https://dokja620.github.io/SAYNA-REACT-SUPERMAN
-> un bug à l'ouverture du site, veuillez une fois ouvert appuyez sur l'un des liens du navbar✨
 
 Après 08 mois à SAYNA, je suis content et fier des avancées aue j'ai pû faire:
 
